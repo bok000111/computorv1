@@ -16,3 +16,8 @@ path = "src/main.rs"
 name = "computorv1"
 path = "src/lib.rs"
 
+[lints.clippy]
+pedantic = {level = "deny", priority = -1}
+needless_lifetimes = "allow"
+similar_names = "allow"
+module_name_repetitions = "allow"

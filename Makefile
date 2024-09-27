@@ -14,6 +14,7 @@ fclean: clean
 re: fclean all
 
 test: fclean
+	@cargo clippy
 	@cargo test --release --test test
 
 .PHONY: $(NAME) all clean fclean re
